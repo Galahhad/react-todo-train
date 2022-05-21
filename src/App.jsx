@@ -65,7 +65,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <form className="form" onClick={handlePost}>
+      <form className="form" onSubmit={handlePost}>
         <input value={text} onChange={handleChange} />
         <button type="submit">ADD</button>
       </form>
