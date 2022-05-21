@@ -83,12 +83,20 @@ code {
 }
 .star {
   font-size: 33px;
+  color: white;
 }
 .star_check .star {
   color: yellow;
 }
-.todo_wrap p {
+.text {
   flex: 1;
+  word-break: break-all;
+  padding: 10px;
+  text-align: justify;
+  color: white;
+}
+.yellow_text .text {
+  color: yellow;
 }
 .error,
 .error_two {

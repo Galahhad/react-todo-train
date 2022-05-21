@@ -76,7 +76,7 @@ const App = () => {
           return (
             <div
               className={`todo_wrap ${
-                todo.checked ? "checked star_check" : ""
+                todo.checked ? "checked star_check yellow_text" : ""
               }`}
               key={index}
             >
@@ -87,7 +87,7 @@ const App = () => {
                   <BsCheck className="star" />
                 )}
               </button>
-              <p>{todo.text}</p>
+              <p className="text">{todo.text}</p>
               {!todo.checked && (
                 <button onClick={() => handleDelete(index)}>
                   <IoTrashBinOutline className="trash" />
