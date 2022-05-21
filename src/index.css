@@ -1,13 +1,104 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(45deg, red, black) no-repeat center center fixed;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.App {
+  width: 600px;
+  margin: 200px auto 0 auto;
+  text-align: center;
+}
+.form {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.form input,
+.form button {
+  display: block;
+}
+.form input {
+  width: 75%;
+  border: 2px solid;
+  border-radius: 7px;
+  font-size: 18px;
+  padding-left: 5px;
+  color: white;
+  outline: none;
+  background-color: transparent;
+}
+.form button {
+  width: 23%;
+  border: none;
+  border-radius: 5px;
+  background: crimson;
+  color: white;
+  font-weight: bold;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.form button:hover {
+  box-shadow: 0 5px 10px 0 black;
+}
+.form button:active {
+  box-shadow: none;
+}
+.todo_wrap {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+}
+.todo_wrap button {
+  display: block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.4s;
+}
+.todo_wrap button:active {
+  transform: scale(0.8);
+}
+.trash {
+  color: red;
+}
+.todos_wrap {
+  margin-top: 20px;
+}
+.checked {
+  color: yellow;
+}
+.star {
+  font-size: 33px;
+}
+.star_check .star {
+  color: yellow;
+}
+.todo_wrap p {
+  flex: 1;
+}
+.error,
+.error_two {
+  text-align: start;
+  padding-left: 9px;
+  color: red;
+  text-shadow: 2px 2px black;
+  flex: 1;
+}
+::selection {
+  background-color: black;
+  color: red;
 }
