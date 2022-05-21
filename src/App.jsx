@@ -13,7 +13,7 @@ const App = () => {
 
   const [errorTwo, setEroorTwo] = useState(false);
 
-  const some = todo.some((todo) => todo.text === text);
+  const some = todo.some((todo) => todo.text.toLowerCase() === text.toLowerCase());
   const handlePost = (e) => {
     e.preventDefault();
     if (text.trim().length === 0) {
